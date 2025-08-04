@@ -14,7 +14,7 @@ const AllBookings = () => {
       <div className="home-page">
         <h1>Barcha Bronlar (Admin)</h1>
         {bookings.length === 0 ? (
-          <p>Hech qanday bron yoq</p>
+          <p>Hech qanday bron yq</p>
         ) : (
           <table className="table">
             <thead>

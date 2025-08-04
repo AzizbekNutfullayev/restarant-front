@@ -19,7 +19,7 @@ const AdminBronlar = () => {
       setLoading(true);
       const res = await axios.get("https://restarant-bacent.onrender.com/api/bron/all");
       console.log("API javobi:", res.data);
-      setBronlar(res.data.data || []); // <-- .data bo'lishi kerak
+      setBronlar(res.data.data || []);
     } catch (err) {
       console.error("Xatolik:", err);
       setError("Xatolik: " + (err.response?.data?.message || err.message));
